@@ -6,7 +6,7 @@ Set-PoshPrompt Paradox
 
 # Load Prompt Config
 function Get-ScriptDirectory { Split-Path $MyInvocation.ScriptName }
-$PROMPT_CONFIG = Join-Path (Get-ScriptDirectory) 'elm_t.omp.json'
+$PROMPT_CONFIG = Join-Path (Get-ScriptDirectory) 'user.omp.json'
 oh-my-posh --init --shell pwsh --config $PROMPT_CONFIG | Invoke-Expression
 
 
